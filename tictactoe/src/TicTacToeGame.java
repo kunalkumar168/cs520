@@ -93,6 +93,8 @@ public class TicTacToeGame {
 	Logger.log("uses");
 	
 	--movesLeft;
+
+	Logger.log("manipulates");
 	if(movesLeft%2 == 1) {
 	    playerturn.setText("'X': Player 1");
 	} else{
@@ -424,6 +426,7 @@ public class TicTacToeGame {
     protected void updateBlock(int row, int column) {
 	blocks[row][column].setText(blocksData[row][column].getContents());
 	blocks[row][column].setEnabled(blocksData[row][column].getIsLegalMove());
+	Logger.log("updates");
     }
 
     /**
@@ -453,5 +456,6 @@ public class TicTacToeGame {
         player = "1";
         movesLeft = 9;
         playerturn.setText("Player 1 to play 'X'");
+		Logger.log("manipulates");
     }
 }
