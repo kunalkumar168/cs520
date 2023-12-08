@@ -7,8 +7,8 @@ digraph G {
   5 [label="INITIAL",shape=box];
 0->0 [label="P: 0.89"];
 0->3 [label="P: 0.11"];
-1->1 [label="P: 0.87"];
-1->2 [label="P: 0.13"];
+1->1 [label="P: 0.86"];
+1->2 [label="P: 0.14"];
 2->2 [label="P: 0.91"];
 2->3 [label="P: 0.08"];
 2->4 [label="P: 0.01"];
